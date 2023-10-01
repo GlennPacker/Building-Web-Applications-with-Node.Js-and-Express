@@ -1,4 +1,5 @@
-const express = require('express');
+import express from 'express';
+import chalk from 'chalk';
 
 const app = express();
 
@@ -7,5 +8,5 @@ app.get('/', (req, res, next) => {
 });
 
 app.listen(3210, ()=> {
-  console.log('listening on port 3210');
+  console.log('listening on port: ' + chalk.green('3210'));
 })
